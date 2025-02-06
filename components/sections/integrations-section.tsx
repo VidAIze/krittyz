@@ -48,9 +48,9 @@ const MarqueeGroup = ({
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 0.5,
+            duration: 0.3,
             ease: [0.25, 0.4, 0.25, 1],
-            delay: Math.random() * 0.5,
+            delay: Math.random() * 0.2,
           }}
           whileHover={{ scale: 1.1 }}
           className="relative flex-shrink-0 group"
@@ -90,7 +90,7 @@ export function IntegrationsSection() {
       {/* Elegant shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <ElegantShape
-          delay={0.3}
+          delay={0.05}
           width={600}
           height={140}
           rotate={12}
@@ -98,7 +98,7 @@ export function IntegrationsSection() {
           className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
         />
         <ElegantShape
-          delay={0.5}
+          delay={0.1}
           width={500}
           height={120}
           rotate={-15}
@@ -106,7 +106,7 @@ export function IntegrationsSection() {
           className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
         />
         <ElegantShape
-          delay={0.4}
+          delay={0.08}
           width={300}
           height={80}
           rotate={-8}

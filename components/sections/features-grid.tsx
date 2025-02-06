@@ -129,7 +129,7 @@ export function FeaturesGrid() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{
-            duration: 0.5,
+            duration: 0.3,
             ease: [0.25, 0.4, 0.25, 1],
           }}
           className="text-center mb-16"
