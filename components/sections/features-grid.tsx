@@ -143,7 +143,7 @@ export function FeaturesGrid() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-[200px]">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <FeatureCard key={feature.title} {...feature} />
           ))}
         </div>

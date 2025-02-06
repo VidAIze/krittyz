@@ -2,7 +2,6 @@
 
 import { motion, useInView } from "framer-motion";
 import { Sparkles, Rocket, Zap } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { useRef } from "react";
 import { ElegantShape } from "@/components/elegant-shape";
 
