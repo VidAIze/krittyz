@@ -265,8 +265,7 @@ const PricingCard = ({
           <div className="pt-6">
             <Button
               className={cn(
-                "w-full rounded-full border border-white/[0.08] bg-black/[0.05] backdrop-blur-md",
-                "hover:bg-black/[0.15] transition-all duration-300",
+                "w-full rounded-full bg-gradient-to-b from-neutral-800 to-neutral-900 text-white hover:from-neutral-700 hover:to-neutral-800 border border-white/[0.08] shadow-lg transition-all duration-300",
                 isPopular &&
                   "bg-gradient-to-r from-indigo-500/40 via-fuchsia-500/40 to-rose-500/40 text-white hover:from-indigo-500/50 hover:via-fuchsia-500/50 hover:to-rose-500/50 border-white/[0.12] shadow-lg"
               )}
@@ -368,7 +367,7 @@ export function PricingSection() {
     pricingStyle === "full-pricing" ? headerText.full : headerText.partial;
 
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
+    <div className="relative min-h-[90vh] w-full flex items-center justify-center overflow-hidden bg-[#030303]">
       {/* Base gradient background */}
       <div className="absolute inset-0 bg-linear-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
 
@@ -400,7 +399,7 @@ export function PricingSection() {
         />
       </div>
 
-      <div className="container relative z-10 mx-auto px-4 py-20">
+      <div className="container relative z-10 mx-auto px-4 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

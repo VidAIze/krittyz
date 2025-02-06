@@ -91,7 +91,7 @@ export function FeaturesGrid() {
   ];
 
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
+    <div className="relative min-h-[80vh] w-full flex items-center justify-center overflow-hidden bg-[#030303]">
       {/* Base gradient background */}
       <div className="absolute inset-0 bg-linear-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
 
@@ -123,7 +123,7 @@ export function FeaturesGrid() {
         />
       </div>
 
-      <div className="container relative z-10 mx-auto px-4 py-12">
+      <div className="container relative z-10 mx-auto px-4 py-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
