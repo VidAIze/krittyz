@@ -24,7 +24,7 @@ const StepCard = ({
   index,
   isInView,
 }: StepCardProps) => {
-  const animationDelay = 0.2 + index * 0.3; // Reduced from 0.5 + index * 0.8
+  const animationDelay = 0.1 + index * 0.15; // Reduced delay
 
   const variants = {
     hidden: { opacity: 0, x: -20 },

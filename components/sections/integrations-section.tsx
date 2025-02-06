@@ -90,7 +90,7 @@ export function IntegrationsSection() {
       {/* Elegant shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <ElegantShape
-          delay={0.05}
+          delay={0.3}
           width={600}
           height={140}
           rotate={12}
@@ -98,7 +98,7 @@ export function IntegrationsSection() {
           className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
         />
         <ElegantShape
-          delay={0.1}
+          delay={0.5}
           width={500}
           height={120}
           rotate={-15}
@@ -106,7 +106,7 @@ export function IntegrationsSection() {
           className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
         />
         <ElegantShape
-          delay={0.08}
+          delay={0.4}
           width={300}
           height={80}
           rotate={-8}
