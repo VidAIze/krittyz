@@ -69,7 +69,7 @@ const PriceDisplay = ({ price, period }: { price: string; period: string }) => (
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -20 }}
     transition={{
-      duration: 0.5,
+      duration: 0.3,
       ease: [0.25, 0.4, 0.25, 1],
     }}
     className="flex items-baseline justify-center gap-1"
@@ -100,9 +100,9 @@ const SinglePricingCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{
-        duration: 1,
+        duration: 0.5,
         ease: [0.25, 0.4, 0.25, 1],
-        delay: 0.2,
+        delay: 0.1,
       }}
       whileHover={{ y: -5 }}
       className="relative w-full max-w-2xl mx-auto"
@@ -116,7 +116,7 @@ const SinglePricingCard = ({
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
+              transition={{ delay: 0.2, duration: 0.8 }}
             >
               <h3 className="text-2xl font-semibold bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent mb-3">
                 {title}
@@ -141,7 +141,7 @@ const SinglePricingCard = ({
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{
                   duration: 0.5,
-                  delay: 0.4 + i * 0.1,
+                  delay: 0.3 + i * 0.1,
                 }}
                 className="flex items-center gap-3"
               >
@@ -187,9 +187,9 @@ const PricingCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{
-        duration: 1,
+        duration: 0.5,
         ease: [0.25, 0.4, 0.25, 1],
-        delay: 0.2 + index * 0.1,
+        delay: 0.1 + index * 0.1,
       }}
       whileHover={{ y: -5 }}
       className="relative pt-4"
@@ -199,7 +199,7 @@ const PricingCard = ({
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            delay: 0.3 + index * 0.1,
+            delay: 0.2 + index * 0.1,
             duration: 0.8,
             ease: [0.25, 0.4, 0.25, 1],
           }}
@@ -247,7 +247,7 @@ const PricingCard = ({
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{
                   duration: 0.5,
-                  delay: 0.4 + index * 0.1 + i * 0.1,
+                  delay: 0.3 + i * 0.1,
                 }}
                 className="flex items-center gap-3"
               >
@@ -375,7 +375,7 @@ export function PricingSection() {
       {/* Elegant shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <ElegantShape
-          delay={0.3}
+          delay={0.1}
           width={600}
           height={140}
           rotate={12}
@@ -383,7 +383,7 @@ export function PricingSection() {
           className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
         />
         <ElegantShape
-          delay={0.5}
+          delay={0.2}
           width={500}
           height={120}
           rotate={-15}
@@ -391,7 +391,7 @@ export function PricingSection() {
           className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
         />
         <ElegantShape
-          delay={0.4}
+          delay={0.15}
           width={300}
           height={80}
           rotate={-8}

@@ -24,7 +24,7 @@ const StepCard = ({
   index,
   isInView,
 }: StepCardProps) => {
-  const animationDelay = 0.5 + index * 0.8; // Increase delay between steps
+  const animationDelay = 0.2 + index * 0.3; // Reduced from 0.5 + index * 0.8
 
   const variants = {
     hidden: { opacity: 0, x: -20 },
@@ -139,7 +139,7 @@ export function HowItWorks() {
       {/* Elegant shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <ElegantShape
-          delay={0.3}
+          delay={0.1}
           width={600}
           height={140}
           rotate={12}
@@ -147,7 +147,7 @@ export function HowItWorks() {
           className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
         />
         <ElegantShape
-          delay={0.5}
+          delay={0.2}
           width={500}
           height={120}
           rotate={-15}
@@ -155,7 +155,7 @@ export function HowItWorks() {
           className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
         />
         <ElegantShape
-          delay={0.4}
+          delay={0.15}
           width={300}
           height={80}
           rotate={-8}
@@ -170,7 +170,7 @@ export function HowItWorks() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{
-            duration: 1,
+            duration: 0.5,
             ease: [0.25, 0.4, 0.25, 1],
           }}
           className="text-center mb-20"

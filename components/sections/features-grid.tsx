@@ -25,7 +25,7 @@ const FeatureCard = ({
       viewport={{ once: true, margin: "-100px" }}
       whileHover={{ scale: 1.02, rotate: 0.5 }}
       transition={{
-        duration: 0.8,
+        duration: 0.4,
         ease: [0.25, 0.4, 0.25, 1],
       }}
       className={cn(
@@ -98,7 +98,7 @@ export function FeaturesGrid() {
       {/* Elegant shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <ElegantShape
-          delay={0.3}
+          delay={0.1}
           width={600}
           height={140}
           rotate={12}
@@ -106,7 +106,7 @@ export function FeaturesGrid() {
           className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
         />
         <ElegantShape
-          delay={0.5}
+          delay={0.2}
           width={500}
           height={120}
           rotate={-15}
@@ -114,7 +114,7 @@ export function FeaturesGrid() {
           className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
         />
         <ElegantShape
-          delay={0.4}
+          delay={0.15}
           width={300}
           height={80}
           rotate={-8}
@@ -129,7 +129,7 @@ export function FeaturesGrid() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{
-            duration: 1,
+            duration: 0.5,
             ease: [0.25, 0.4, 0.25, 1],
           }}
           className="text-center mb-16"

@@ -15,7 +15,7 @@ export function CTASection() {
       {/* Elegant shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <ElegantShape
-          delay={0.3}
+          delay={0.1}
           width={600}
           height={140}
           rotate={12}
@@ -23,7 +23,7 @@ export function CTASection() {
           className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
         />
         <ElegantShape
-          delay={0.5}
+          delay={0.2}
           width={500}
           height={120}
           rotate={-15}
@@ -39,7 +39,7 @@ export function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{
-              duration: 1,
+              duration: 0.5,
               ease: [0.25, 0.4, 0.25, 1],
             }}
             className="relative rounded-3xl border border-white/[0.08] bg-black/[0.08] backdrop-blur-md p-12 md:p-16 overflow-hidden"
@@ -55,8 +55,8 @@ export function CTASection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{
-                  duration: 1,
-                  delay: 0.2,
+                  duration: 0.5,
+                  delay: 0.1,
                   ease: [0.25, 0.4, 0.25, 1],
                 }}
                 className="inline-block"
@@ -78,8 +78,8 @@ export function CTASection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{
-                  duration: 1,
-                  delay: 0.3,
+                  duration: 0.5,
+                  delay: 0.15,
                   ease: [0.25, 0.4, 0.25, 1],
                 }}
                 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 mt-6 mb-4"
@@ -93,8 +93,8 @@ export function CTASection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{
-                  duration: 1,
-                  delay: 0.4,
+                  duration: 0.5,
+                  delay: 0.1,
                   ease: [0.25, 0.4, 0.25, 1],
                 }}
                 className="text-lg text-white/60 mb-8 max-w-2xl mx-auto"
@@ -109,8 +109,8 @@ export function CTASection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{
-                  duration: 1,
-                  delay: 0.5,
+                  duration: 0.5,
+                  delay: 0.1,
                   ease: [0.25, 0.4, 0.25, 1],
                 }}
               >
